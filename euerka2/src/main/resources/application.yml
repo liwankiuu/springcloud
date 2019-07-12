@@ -1,5 +1,5 @@
 server:
-  port: 8100
+  port: 9100
 ##定义服务名称
 spring:
   application:
@@ -9,6 +9,6 @@ eureka:
     hostname: 127.0.0.1
   client:
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:9100/eureka/
+      defaultZone: http://${eureka.instance.hostname}:8100/eureka/
     register-with-eureka: true
     fetch-registry: true
